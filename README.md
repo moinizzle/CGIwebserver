@@ -24,4 +24,4 @@ gcc -g -Wall -o large large.o cgi.o
 ```shell
 $ make clean
 rm *.o wserver simple term slowcgi large testprogtable
-```shell
+```
