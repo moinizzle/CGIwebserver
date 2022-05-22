@@ -20,6 +20,18 @@ gcc -g -Wall -o testprogtable testprogtable.o progtable.o
 gcc -g -Wall  -c large.c
 gcc -g -Wall -o large large.o cgi.o
 ```
+## run server
+```shell
+$ ./wserver 12345
+Starting...
+```
+## user netcat to connect to server
+```
+$ nc -C localhost 12345
+```
+## check if server accepted connection
+Starting...
+Accepted connection 0
 
 # Clean up resources
 ```shell
