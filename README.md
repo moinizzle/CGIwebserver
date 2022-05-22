@@ -18,7 +18,10 @@ gcc -g -Wall  -c testprogtable.c
 gcc -g -Wall -o testprogtable testprogtable.o progtable.o  
 gcc -g -Wall  -c large.c
 gcc -g -Wall -o large large.o cgi.o
+```
 
 # Clean up resources
+```shell
 $ make clean
 rm *.o wserver simple term slowcgi large testprogtable
+```shell
