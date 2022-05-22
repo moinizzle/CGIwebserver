@@ -34,6 +34,31 @@ $ nc -C localhost 12345
 Starting...
 Accepted connection 0
 ```
+## type GET request
+```shell
+$ nc -C localhost 12345
+$ GET /simple?arg1=name&arg2=value HTTP/1.1
+```
+## send newline to execute GET request
+```shell
+$ nc -C localhost 12345
+$ GET /simple?arg1=name&arg2=value HTTP/1.1
+
+HTTP/1.1 200 OK
+Content-type: text/html
+
+<html><head>
+<title>Hello World</title>
+<link rel="icon" href="data:,"></head>
+<body>
+<h2>Hello, world!</h2>
+<p>QUERY_STRING = arg1=name&arg2=value</p>
+<ul>
+<li>arg1 = name</li>
+<li>arg2 = value</li>
+</ul>
+</body></html>
+```
 # Clean up resources
 ```shell
 $ make clean
