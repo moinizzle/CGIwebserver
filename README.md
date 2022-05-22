@@ -1,5 +1,6 @@
 # Instructions
 ```shell
+## build executables from source code
 $ make
 gcc -g -Wall  -c wserver.c
 gcc -g -Wall  -c wrapsock.c
