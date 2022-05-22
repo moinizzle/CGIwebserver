@@ -25,14 +25,15 @@ gcc -g -Wall -o large large.o cgi.o
 $ ./wserver 12345
 Starting...
 ```
-## user netcat to connect to server
-```
+## use netcat to connect to server
+```shell
 $ nc -C localhost 12345
 ```
 ## check if server accepted connection
+```shell
 Starting...
 Accepted connection 0
-
+```
 # Clean up resources
 ```shell
 $ make clean
